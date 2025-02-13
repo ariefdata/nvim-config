@@ -34,6 +34,7 @@ return {
         "emmet_ls",
         "prismals",
         "pyright",
+        "intelephense",
       },
     })
 
@@ -45,6 +46,9 @@ return {
         "black", -- python formatter
         "pylint", -- python linter
         "eslint_d", -- js linter
+        "pretty-php", -- php formatter
+        "phpstan", -- php linter
+        "php-cs-fixer", -- php formatter
       },
     })
   end,

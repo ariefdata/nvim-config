@@ -1,4 +1,3 @@
-
 return {
   "neovim/nvim-lspconfig",
   event = { "BufReadPre", "BufNewFile" },
@@ -92,6 +91,13 @@ return {
           capabilities = capabilities,
         })
       end,
+      ["intelephense"] = function()
+        -- configure php server
+        lspconfig["intelephense"].setup({
+          capabilities = capabilities,
+          filetypes = { "php" },
+        })
+      end,
       ["svelte"] = function()
         -- configure svelte server
         lspconfig["svelte"].setup({
@@ -121,6 +127,14 @@ return {
           filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "svelte" },
         })
       end,
+      ["tailwindcss"] = function()
+        -- configure emmet language server
+        lspconfig["tailwindcss"].setup({
+          capabilities = capabilities,
+          filetypes = { "html" },
+        })
+      end,
+
       ["lua_ls"] = function()
         -- configure lua server (with special settings)
         lspconfig["lua_ls"].setup({

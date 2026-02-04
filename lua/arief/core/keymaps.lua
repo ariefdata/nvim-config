@@ -19,6 +19,11 @@ keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 keymap.set("n", "<leader>+", "<C-a>", { desc = "Increment number" }) -- increment
 keymap.set("n", "<leader>-", "<C-x>", { desc = "Decrement number" }) -- decrement
 
+-- codex
+keymap.set("n", "<leader>cx", "<cmd>CodexToggle<CR>", { desc = "Toggle Codex terminal" })
+keymap.set("n", "<leader>co", "<cmd>Codex<CR>", { desc = "Open Codex terminal" })
+keymap.set("n", "<leader>cq", "<cmd>CodexClose<CR>", { desc = "Close Codex terminal" })
+
 -- window management
 keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" }) -- split window vertically
 keymap.set("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally" }) -- split window horizontally
